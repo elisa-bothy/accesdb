@@ -21,7 +21,7 @@ import java.util.Collection;
 public class PersonDAO {
     Connection connection;
 
-    public PersonDAO() {
+    public PersonDAO() throws SQLException {
         connection = MariadbConnection.getInstance();
     }
     

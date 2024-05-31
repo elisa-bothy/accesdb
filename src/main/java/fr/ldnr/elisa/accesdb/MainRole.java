@@ -6,6 +6,7 @@ package fr.ldnr.elisa.accesdb;
 
 import dao.RoleDAO;
 import entities.Role;
+import java.sql.SQLException;
 import java.util.Collection;
 
 /**
@@ -13,7 +14,7 @@ import java.util.Collection;
  * @author Elisa Bothy
  */
 public class MainRole {
-     public static void main(String[] args) {
+     public static void main(String[] args) throws SQLException {
          //role
         
          //récupérer un DAO sur la table role

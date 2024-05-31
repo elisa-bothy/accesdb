@@ -6,9 +6,8 @@
 package fr.ldnr.elisa.accesdb;
 
 import dao.PersonDAO;
-import dao.RoleDAO;
 import entities.Person;
-import entities.Role;
+import java.sql.SQLException;
 import java.util.Collection;
 
 /**
@@ -17,7 +16,7 @@ import java.util.Collection;
  */
 public class MainClass {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws SQLException {
         //récupérer un DAO sur la table person
         PersonDAO pdao = new PersonDAO();
         //Compter les lignes

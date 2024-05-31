@@ -25,8 +25,9 @@ public final class MariadbConnection {
     /**
      * 
      * @return Un singleton de connexion 
+     * @throws java.sql.SQLException 
      */
-    public static Connection getInstance(){
+    public static Connection getInstance()throws SQLException{
         if (connection == null){
             String url = "jdbc:mariadb://localhost:3306/example";
             try {

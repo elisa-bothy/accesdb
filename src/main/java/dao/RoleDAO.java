@@ -19,7 +19,7 @@ import java.util.Collection;
 public class RoleDAO {
     Connection connection;
 
-    public RoleDAO() {
+    public RoleDAO() throws SQLException {
         connection = MariadbConnection.getInstance();
     }
     
